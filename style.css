@@ -1,0 +1,153 @@
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #ffffff 50%, #0072ff 50%); /* Top half white, bottom half blue */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Heading Outside the Box */
+.main-heading {
+  margin-bottom: 30px; /* Space between main heading and feedback form */
+}
+
+.main-heading h1 {
+  font-size: 2rem;
+  color: #005fd1;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Feedback Box with Blue Background Behind */
+.feedback-box {
+  background-color: #0072ff; /* Blue Background */
+  padding: 30px;
+  border-radius: 15px;
+  width: 420px;
+  max-width: 95%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Sub Heading Inside the Box */
+.heading-inside-box {
+  background-color: #0072ff; /* Blue Background */
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.heading-inside-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.heading-inside-box p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Feedback Form Inside the Box */
+.feedback-container {
+  background-color: white; /* White Background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Emoji Rating */
+.emoji-rating {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.emoji-rating span {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.emoji-rating span.selected {
+  transform: scale(1.3);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.radio-group input[type="radio"] {
+  transform: scale(1.2);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #005fd1;
+}
+
+/* Toast Message */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* Blue section at the bottom */
+footer {
+  background-color: #0072ff; /* Solid blue background */
+  padding: 20px;
+  color: white;
+}

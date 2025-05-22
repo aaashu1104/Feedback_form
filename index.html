@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Main Heading Outside the Box -->
+  <div class="main-heading">
+    <h1>Feedback Form</h1>
+  </div>
+
+  <!-- Feedback Form Box with Blue Background Behind -->
+  <div class="feedback-box">
+    <!-- Sub Heading Inside the Box with Blue Background -->
+    <div class="heading-inside-box">
+      <h2>Send us your feedback!</h2>
+      <p>Do you have a suggestion or found some bug? Let us know in the field below.</p>
+    </div>
+
+    <!-- Feedback Form Inside (White Background) -->
+    <div class="feedback-container">
+      <!-- Emoji Rating (Positive first, then Neutral, then Negative) -->
+      <div class="emoji-rating" id="emojiRating">
+        <span data-value="3">😊</span> <!-- Positive Emoji -->
+        <span data-value="2">😐</span> <!-- Neutral Emoji -->
+        <span data-value="1">😟</span> <!-- Negative Emoji -->
+      </div>
+
+      <!-- Description -->
+      <textarea id="description" placeholder="Describe your experience..." required></textarea>
+
+      <!-- Feedback Type (Bug, Suggestion, Other) -->
+      <div class="radio-group">
+        <label><input type="radio" name="feedback_type" value="Bug"> 🐞 Bug</label>
+        <label><input type="radio" name="feedback_type" value="Suggestion"> 💡 Suggestion</label>
+        <label><input type="radio" name="feedback_type" value="Other"> 📦 Other</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button class="submit-btn" onclick="sendFeedback()">Send Feedback</button>
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div class="toast" id="toast">Thanks! Your feedback was received.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
